@@ -252,23 +252,59 @@
             </div>
         </div>
 
+        <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
         <section id="trainees" class="section-card mb-5">
             <h2>Recently Graduated Trainees</h2>
-            <div class="row g-4 mt-2">
-                <div class="col-md-6">
-                    <div class="dev-badge text-center">
-                        <img src="./ryan.jpg" alt="Ryan Murphy">
-                        <h3 class="h5 fw-bold">Ryan Murphy</h3>
-                        <p class="mb-0">"DigitalMinds made the shift from learning to working seamless by giving me hands‑on exposure to genuine client projects."</p>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-interval="2000" data-bs-theme="dark">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-12">
+                                <div class="dev-badge text-center h-100">
+                                    <img src="./ryan.jpg" alt="Ryan Murphy">
+                                    <h3 class="h5 fw-bold">Ryan Murphy</h3>
+                                    <p class="mb-0">"DigitalMinds made the shift from learning to working seamless by giving me hands‑on exposure to genuine client projects."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-12">
+                                <div class="dev-badge text-center h-100">
+                                    <img src="./ethan.jpg" alt="Ethan Miller">
+                                    <h3 class="h5 fw-bold">Ferg Miller</h3>
+                                    <p class="mb-0">"The aim isn’t simply to write code, but to design reliable, scalable systems that make a measurable difference for the people who use them."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-12">
+                            <div class="dev-badge text-center h-100">
+                                <img src="./allen.jpg" alt="Alfie Allen">
+                                <h3 class="h5 fw-bold">Alfie Allen</h3>
+                                <p class="mb-0">"Digital Minds has helped me apply for jobs and gain new knowledge about the work-foce"</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="dev-badge text-center">
-                        <img src="./ethan.jpg" alt="Ethan Miller">
-                        <h3 class="h5 fw-bold">Ferg Miller</h3>
-                        <p class="mb-0">"The aim isn’t simply to write code, but to design reliable, scalable systems that make a measurable difference for the people who use them."</p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
